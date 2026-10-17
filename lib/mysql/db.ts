@@ -4,6 +4,7 @@ let pool: Pool | null = null;
 
 export function getPool(): Pool {
   if (!pool) {
+    const useSsl = process.env.DB_SSL === 'true';
     pool = mysql.createPool({
       host: process.env.DB_HOST || 'localhost',
       port: parseInt(process.env.DB_PORT || '3306', 10),
@@ -15,7 +16,8 @@ export function getPool(): Pool {
       queueLimit: 0,
       enableKeepAlive: true,
       keepAliveInitialDelay: 10000,
-      dateStrings: true
+      dateStrings: true,
+      ...(useSsl ? { ssl: { rejectUnauthorized: false } } : {})
     });
   }
   return pool;
