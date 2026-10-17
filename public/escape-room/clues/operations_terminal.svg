@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="100%" height="100%">
+  <defs>
+    <radialGradient id="crtGlow" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="70%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#021a14" />
+    </radialGradient>
+    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1.2" opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <!-- CRT Monitor Bezel -->
+  <rect x="5" y="5" width="690" height="510" rx="16" fill="#09090b" stroke="#27272a" stroke-width="6" />
+
+  <!-- Screen Glass with Phosphor Glow -->
+  <rect x="25" y="25" width="650" height="470" rx="10" fill="url(#crtGlow)" stroke="#059669" stroke-width="2" />
+  <rect x="25" y="25" width="650" height="470" rx="10" fill="url(#scanlines)" />
+
+  <!-- Terminal Header -->
+  <text x="45" y="55" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold" letter-spacing="2">
+    MINDVAULT SEC-SYS KERNEL v8.2 // CENTRAL COMMAND
+  </text>
+  <text x="45" y="73" fill="#059669" font-family="'JetBrains Mono', monospace" font-size="10">
+    TERMINAL ID: C-VAULT-01 • SECTOR CLEARANCE: REDACTED
+  </text>
+  <line x1="45" y1="82" x2="655" y2="82" stroke="#10b981" stroke-width="1.5" />
+
+  <!-- Status Advisory -->
+  <text x="45" y="105" fill="#f87171" font-family="monospace" font-size="11" font-weight="bold">
+    [ALERT] BLAST DOOR EXHAUST INTERLOCK SEALED. MANUAL KEY DERIVATION REQUIRED.
+  </text>
+
+  <!-- 4x4 Coordinate Matrix Table -->
+  <g transform="translate(45, 125)">
+    <!-- Table background -->
+    <rect x="0" y="0" width="280" height="240" fill="#022c22" stroke="#10b981" stroke-width="1.5" rx="4" />
+    
+    <!-- Matrix Header Labels -->
+    <text x="140" y="22" fill="#6ee7b7" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">BUFFER MEMORY MATRIX</text>
+    <line x1="0" y1="30" x2="280" y2="30" stroke="#047857" stroke-width="1" />
+
+    <!-- Column numbers -->
+    <text x="70" y="50" fill="#a7f3d0" font-family="monospace" font-size="11" text-anchor="middle">C1</text>
+    <text x="120" y="50" fill="#a7f3d0" font-family="monospace" font-size="11" text-anchor="middle">C2</text>
+    <text x="170" y="50" fill="#a7f3d0" font-family="monospace" font-size="11" text-anchor="middle">C3</text>
+    <text x="220" y="50" fill="#a7f3d0" font-family="monospace" font-size="11" text-anchor="middle">C4</text>
+    <line x1="35" y1="60" x2="255" y2="60" stroke="#047857" stroke-width="1" />
+
+    <!-- Row 1: P R O T -->
+    <text x="25" y="90" fill="#a7f3d0" font-family="monospace" font-size="11">R1</text>
+    <text x="70" y="92" fill="#ffffff" font-family="monospace" font-size="15" font-weight="bold" text-anchor="middle">P</text>
+    <text x="120" y="92" fill="#ffffff" font-family="monospace" font-size="15" font-weight="bold" text-anchor="middle">R</text>
+    <text x="170" y="92" fill="#fef08a" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">O</text>
+    <text x="220" y="92" fill="#ffffff" font-family="monospace" font-size="15" font-weight="bold" text-anchor="middle">T</text>
+
+    <!-- Row 2: O C O L -->
+    <text x="25" y="135" fill="#a7f3d0" font-family="monospace" font-size="11">R2</text>
+    <text x="70" y="137" fill="#ffffff" font-family="monospace" font-size="15" font-weight="bold" text-anchor="middle">O</text>
+    <text x="120" y="137" fill="#ffffff" font-family="monospace" font-size="15" font-weight="bold" text-anchor="middle">C</text>
+    <text x="170" y="137" fill="#ffffff" font-family="monospace" font-size="15" font-weight="bold" text-anchor="middle">O</text>
+    <text x="220" y="137" fill="#ffffff" font-family="monospace" font-size="15" font-weight="bold" text-anchor="middle">L</text>
+
+    <!-- Row 3: S I G M -->
+    <text x="25" y="180" fill="#a7f3d0" font-family="monospace" font-size="11">R3</text>
+    <text x="70" y="182" fill="#ffffff" font-family="monospace" font-size="15" font-weight="bold" text-anchor="middle">S</text>
+    <text x="120" y="182" fill="#ffffff" font-family="monospace" font-size="15" font-weight="bold" text-anchor="middle">I</text>
+    <text x="170" y="182" fill="#fef08a" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">G</text>
+    <text x="220" y="182" fill="#fef08a" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">M</text>
+
+    <!-- Row 4: A E X T -->
+    <text x="25" y="222" fill="#a7f3d0" font-family="monospace" font-size="11">R4</text>
+    <text x="70" y="224" fill="#fef08a" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">A</text>
+    <text x="120" y="224" fill="#fef08a" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">E</text>
+    <text x="170" y="224" fill="#ffffff" font-family="monospace" font-size="15" font-weight="bold" text-anchor="middle">X</text>
+    <text x="220" y="224" fill="#ffffff" font-family="monospace" font-size="15" font-weight="bold" text-anchor="middle">T</text>
+  </g>
+
+  <!-- Vector Coordinates Query Panel -->
+  <g transform="translate(345, 125)">
+    <rect x="0" y="0" width="310" height="240" fill="#022c22" stroke="#10b981" stroke-width="1.5" rx="4" />
+    <text x="15" y="25" fill="#34d399" font-family="monospace" font-size="12" font-weight="bold">
+      DIAGNOSTIC VECTOR QUERY:
+    </text>
+    <line x1="0" y1="35" x2="310" y2="35" stroke="#047857" stroke-width="1" />
+
+    <text x="15" y="60" fill="#a7f3d0" font-family="monospace" font-size="11">
+      KERNEL MEMORY EXTRACTION:
+    </text>
+    <text x="15" y="80" fill="#6ee7b7" font-family="monospace" font-size="11">
+      Query points format: (Row, Column)
+    </text>
+
+    <text x="25" y="115" fill="#fef08a" font-family="monospace" font-size="13" font-weight="bold">1. POINT_A: (Row 1, Col 3)</text>
+    <text x="25" y="140" fill="#fef08a" font-family="monospace" font-size="13" font-weight="bold">2. POINT_B: (Row 3, Col 4)</text>
+    <text x="25" y="165" fill="#fef08a" font-family="monospace" font-size="13" font-weight="bold">3. POINT_C: (Row 4, Col 2)</text>
+    <text x="25" y="190" fill="#fef08a" font-family="monospace" font-size="13" font-weight="bold">4. POINT_D: (Row 3, Col 3)</text>
+    <text x="25" y="215" fill="#fef08a" font-family="monospace" font-size="13" font-weight="bold">5. POINT_E: (Row 4, Col 1)</text>
+  </g>
+
+  <!-- Instruction Footer -->
+  <rect x="45" y="385" width="610" height="85" fill="#011910" stroke="#059669" stroke-width="1.5" rx="4" />
+  <text x="65" y="410" fill="#34d399" font-family="monospace" font-size="11" font-weight="bold">
+    BLAST DOOR TERMINAL OVERRIDE INSTRUCTION:
+  </text>
+  <text x="65" y="430" fill="#e2e8f0" font-family="monospace" font-size="12">
+    Combine the letters extracted from the memory matrix in sequence (A → B → C → D → E).
+  </text>
+  <text x="65" y="450" fill="#a7f3d0" font-family="monospace" font-size="11">
+    Enter the resulting authorization clearance word into the Master Blast Door Interlock.
+  </text>
+
+  <!-- Flashing Cursor Effect -->
+  <rect x="620" y="438" width="8" height="15" fill="#34d399" />
+</svg>

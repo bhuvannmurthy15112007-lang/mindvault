@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-dark: #07090E;
+  --bg-surface: #0D111A;
+  --bg-card: #121826;
+  --border-color: #1F293D;
+  --cyan-accent: #00F0FF;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: #F3F4F6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(0, 240, 255, 0.04) 0%, transparent 60%),
+    radial-gradient(circle at 100% 50%, rgba(99, 102, 241, 0.03) 0%, transparent 50%),
+    linear-gradient(to bottom, #07090E 0%, #090D14 100%);
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07090E;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F293D;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Cyber grid texture */
+.cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(31, 41, 61, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(31, 41, 61, 0.25) 1px, transparent 1px);
+}

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="metalBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917" />
+      <stop offset="50%" stop-color="#292524" />
+      <stop offset="100%" stop-color="#141210" />
+    </linearGradient>
+    <linearGradient id="warnHdr" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <pattern id="hazardStripe" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="10" height="20" fill="#f59e0b" />
+      <rect x="10" width="10" height="20" fill="#18181b" />
+    </pattern>
+  </defs>
+
+  <!-- Border & Rivets -->
+  <rect x="5" y="5" width="690" height="510" rx="8" fill="url(#metalBg)" stroke="#44403c" stroke-width="4" />
+  <circle cx="20" cy="20" r="5" fill="#78716c" stroke="#292524" stroke-width="2"/>
+  <circle cx="680" cy="20" r="5" fill="#78716c" stroke="#292524" stroke-width="2"/>
+  <circle cx="20" cy="500" r="5" fill="#78716c" stroke="#292524" stroke-width="2"/>
+  <circle cx="680" cy="500" r="5" fill="#78716c" stroke="#292524" stroke-width="2"/>
+
+  <!-- Top Hazard Stripes -->
+  <rect x="25" y="20" width="650" height="22" fill="url(#hazardStripe)" rx="3" stroke="#000" stroke-width="1.5" />
+
+  <!-- Header Banner -->
+  <rect x="25" y="48" width="650" height="52" fill="url(#warnHdr)" rx="4" />
+  <text x="350" y="72" fill="#000000" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="900" letter-spacing="3" text-anchor="middle">SUB-LEVEL 04 • DECONTAMINATION AIRLOCK</text>
+  <text x="350" y="92" fill="#1c1917" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">HAZARD PLACARD 77-B • ATMOSPHERIC PURGE SPECIFICATIONS</text>
+
+  <!-- Hazard Diamond / Symbol Box -->
+  <rect x="40" y="115" width="100" height="100" fill="#0c0a09" stroke="#78716c" stroke-width="2" rx="4" />
+  <polygon points="90,125 130,165 90,205 50,165" fill="#292524" stroke="#f59e0b" stroke-width="2"/>
+  <text x="90" y="152" fill="#ef4444" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">4</text>
+  <text x="70" y="172" fill="#3b82f6" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">3</text>
+  <text x="110" y="172" fill="#eab308" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">2</text>
+  <text x="90" y="195" fill="#f8fafc" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">W</text>
+
+  <!-- Technical Context Label -->
+  <text x="160" y="135" fill="#e7e5e4" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold">PURGE LINE CALIBRATION MATRIX</text>
+  <text x="160" y="155" fill="#a8a29e" font-family="'JetBrains Mono', monospace" font-size="11">Gas lines are monitored by isolated ionizing sensor arrays.</text>
+  <text x="160" y="172" fill="#a8a29e" font-family="'JetBrains Mono', monospace" font-size="11">Breaker relay draws values sequentially from online lines only.</text>
+  <text x="160" y="190" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">ALERT: OFFLINE / BYPASSED LINES MUST BE EXCLUDED FROM OVERRIDE INPUT.</text>
+
+  <!-- Table of Chambers -->
+  <rect x="40" y="225" width="620" height="180" fill="#0c0a09" stroke="#44403c" stroke-width="2" rx="4" />
+  
+  <!-- Table Header -->
+  <rect x="40" y="225" width="620" height="28" fill="#1c1917" />
+  <text x="60" y="244" fill="#78716c" font-family="monospace" font-size="11" font-weight="bold">LINE ID</text>
+  <text x="140" y="244" fill="#78716c" font-family="monospace" font-size="11" font-weight="bold">GAS ISOTOPE</text>
+  <text x="280" y="244" fill="#78716c" font-family="monospace" font-size="11" font-weight="bold">SYMBOL</text>
+  <text x="400" y="244" fill="#78716c" font-family="monospace" font-size="11" font-weight="bold">ATOMIC NUMBER</text>
+  <text x="560" y="244" fill="#78716c" font-family="monospace" font-size="11" font-weight="bold">STATUS</text>
+  <line x1="40" y1="253" x2="660" y2="253" stroke="#44403c" stroke-width="1.5" />
+
+  <!-- Row 1: Helium -->
+  <text x="60" y="278" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="bold">Line I</text>
+  <text x="140" y="278" fill="#f5f5f4" font-family="monospace" font-size="12">Helium</text>
+  <text x="280" y="278" fill="#f5f5f4" font-family="monospace" font-size="12" font-weight="bold">He</text>
+  <text x="400" y="278" fill="#fbbf24" font-family="monospace" font-size="14" font-weight="bold">Z = 2</text>
+  <rect x="550" y="265" width="85" height="18" fill="#14532d" rx="3" />
+  <text x="592" y="278" fill="#86efac" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">ACTIVE</text>
+  <line x1="40" y1="290" x2="660" y2="290" stroke="#292524" stroke-width="1" />
+
+  <!-- Row 2: Beryllium -->
+  <text x="60" y="310" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="bold">Line II</text>
+  <text x="140" y="310" fill="#f5f5f4" font-family="monospace" font-size="12">Beryllium</text>
+  <text x="280" y="310" fill="#f5f5f4" font-family="monospace" font-size="12" font-weight="bold">Be</text>
+  <text x="400" y="310" fill="#fbbf24" font-family="monospace" font-size="14" font-weight="bold">Z = 4</text>
+  <rect x="550" y="297" width="85" height="18" fill="#14532d" rx="3" />
+  <text x="592" y="310" fill="#86efac" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">ACTIVE</text>
+  <line x1="40" y1="322" x2="660" y2="322" stroke="#292524" stroke-width="1" />
+
+  <!-- Row 3: Nitrogen -->
+  <text x="60" y="342" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="bold">Line III</text>
+  <text x="140" y="342" fill="#f5f5f4" font-family="monospace" font-size="12">Nitrogen</text>
+  <text x="280" y="342" fill="#f5f5f4" font-family="monospace" font-size="12" font-weight="bold">N</text>
+  <text x="400" y="342" fill="#fbbf24" font-family="monospace" font-size="14" font-weight="bold">Z = 7</text>
+  <rect x="550" y="329" width="85" height="18" fill="#14532d" rx="3" />
+  <text x="592" y="342" fill="#86efac" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">ACTIVE</text>
+  <line x1="40" y1="354" x2="660" y2="354" stroke="#292524" stroke-width="1" />
+
+  <!-- Row 4: Argon (BYPASSED / OFFLINE RED HERRING) -->
+  <text x="60" y="374" fill="#78716c" font-family="monospace" font-size="13" text-decoration="line-through">Line IV</text>
+  <text x="140" y="374" fill="#78716c" font-family="monospace" font-size="12" text-decoration="line-through">Argon</text>
+  <text x="280" y="374" fill="#78716c" font-family="monospace" font-size="12" text-decoration="line-through">Ar</text>
+  <text x="400" y="374" fill="#78716c" font-family="monospace" font-size="14" text-decoration="line-through">Z = 18</text>
+  <rect x="550" y="361" width="85" height="18" fill="#7f1d1d" rx="3" stroke="#ef4444" stroke-width="1"/>
+  <text x="592" y="374" fill="#fca5a5" font-family="monospace" font-size="9" font-weight="bold" text-anchor="middle">OFFLINE</text>
+  <line x1="40" y1="386" x2="660" y2="386" stroke="#292524" stroke-width="1" />
+
+  <!-- Row 5: Fluorine -->
+  <text x="60" y="399" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="bold">Line V</text>
+  <text x="140" y="399" fill="#f5f5f4" font-family="monospace" font-size="12">Fluorine</text>
+  <text x="280" y="399" fill="#f5f5f4" font-family="monospace" font-size="12" font-weight="bold">F</text>
+  <text x="400" y="399" fill="#fbbf24" font-family="monospace" font-size="14" font-weight="bold">Z = 9</text>
+  <rect x="550" y="388" width="85" height="15" fill="#14532d" rx="3" />
+  <text x="592" y="399" fill="#86efac" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">ACTIVE</text>
+
+  <!-- Bottom Directive Banner (Visual sequence deduction) -->
+  <rect x="40" y="420" width="620" height="52" fill="#18181b" stroke="#f59e0b" stroke-width="1.5" rx="4" />
+  <text x="55" y="442" fill="#f59e0b" font-family="monospace" font-size="11" font-weight="bold">PURGE VALVE OVERRIDE SEQUENCE ROUTING:</text>
+  <text x="55" y="460" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="bold" letter-spacing="4">LINE I  →  LINE II  →  LINE III  →  LINE V</text>
+  <text x="460" y="452" fill="#a8a29e" font-family="monospace" font-size="10">FORMAT: ATOMIC [Z] PER ACTIVE LINE</text>
+
+  <!-- Footer Caution Stripes -->
+  <rect x="25" y="485" width="650" height="14" fill="url(#hazardStripe)" rx="2" />
+</svg>
